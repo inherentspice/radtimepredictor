@@ -1,9 +1,12 @@
 from termcolor import colored
 
-def rad_time():
+def rad_time(test=False):
     """Tell the computer what your plan is for the
     day and it will tell you whether you will have
     a rad time"""
+
+    if test==True:
+        return "I see you test."
 
     string = input(colored("Tell me your plans for the day and I will tell you its raditude:", 'yellow'))
     answer_decoded = string.split(" ")
